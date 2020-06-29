@@ -114,3 +114,21 @@ if __name__ == "__main__":
 	print(square(2))
 	print(cube(2))
 	
+# 闭包示例
+def make_averager():
+    series = []
+
+    def averager(new_value):
+        series.append(new_value)
+        total = sum(series)
+        return total/len(series)
+
+    return averager
+
+>>> avg = make_averager()
+>>> avg(10)
+10.0
+>>> avg(11)
+10.5
+>>> avg(12)
+11.0
