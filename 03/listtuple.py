@@ -1,6 +1,9 @@
 # -*- coding:utf-8 -*-
 # 基础篇 03 列表和元组
 
+#列表 l = []
+#元组 t = ()
+#导入nympy,别名为np
 import numpy as np
 
 if __name__ == "__main__":
@@ -39,10 +42,14 @@ if __name__ == "__main__":
     
     # 内置函数
     l = [3,2,3,7,8,1]
+    #列表中值3的个数
     print(l.count(3))
+    #值为7的索引
     print(l.index(7))
+    #反转
     l.reverse()
     print(l)
+    #排序
     l.sort()
     print(l)
     
